@@ -123,7 +123,7 @@ const MovieProgramPage = () => {
           />
         </div>
         <TypingAnimation
-          text="பூவே உனக்காக திரைப்படத்திலிருந்து இந்த பாடல் உங்களுக்காக"
+          text="Welcome To SkyLight 3D Cinemas"
           duration={25}
           className={`text-2xl font-bold mb-8 ${
             darkMode ? "text-white" : "text-[#5046e6]"

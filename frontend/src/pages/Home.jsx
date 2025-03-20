@@ -1,8 +1,10 @@
-import hero from "../images/Seeman.jpg";
+import hero from "../images/Home.jpg";
 import { useEffect, useState } from "react";
+import BackgroundRipple from "../components/BackgroundRipple"; // Import BackgroundRipple component
 
 const UnderConstruction = () => {
   const [textVisible, setTextVisible] = useState(false);
+  
 
   useEffect(() => {
     // Trigger text reveal after a short delay
@@ -14,7 +16,11 @@ const UnderConstruction = () => {
   }, []);
 
   return (
-    <div>
+    <div className="relative min-h-screen">
+      
+      {/* Background Ripple Effect */}
+      <BackgroundRipple className="absolute inset-0" />
+
       {/* Hero Section */}
       <div
         className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white relative"
@@ -55,31 +61,29 @@ const UnderConstruction = () => {
       {/* Content Section */}
       <div className="bg bg-primary text-white p-8 md:p-16">
         <h2 className="text-4xl font-semibold mb-4">
-          Why Protect Turtles in Sri Lanka?
+          Why Support SkyLights Cinemas?
         </h2>
         <p className="text-lg mb-6">
-          Sri Lanka is home to five of the seven species of sea turtles found in
-          the world. These magnificent creatures have roamed the oceans for over
-          100 million years, but today they are under severe threat due to human
-          activities.
+          SkyLights Cinemas is dedicated to bringing quality entertainment to the community, 
+          offering an immersive cinematic experience for all movie lovers. 
+          As a key part of the local entertainment scene, our theatre plays a vital role in promoting 
+          film culture and providing a space for families and friends to come together.
         </p>
         <h3 className="text-2xl font-semibold mb-3">
-          The Importance of Turtle Conservation
+          The Importance of Theatre Management
         </h3>
         <p className="text-lg mb-6">
-          Sea turtles play a crucial role in maintaining the health of marine
-          ecosystems. They help balance ocean habitats and support biodiversity
-          by regulating jellyfish populations and ensuring healthy seagrass
-          beds. Protecting turtles is not just about saving an individual
-          species, but about preserving the entire marine ecosystem they
-          support.
+          A well-managed theatre enhances the movie-watching experience by ensuring smooth movie scheduling, 
+          comfortable seating, and seamless booking and payment processes. Beyond entertainment, 
+          cinemas contribute to cultural enrichment and support the film industry by showcasing diverse movies. 
+          At SkyLights Cinemas, we are committed to maintaining high-quality service, making every visit enjoyable.
         </p>
-        <h3 className="text-2xl font-semibold mb-3">How You Can Help</h3>
+        <h3 className="text-2xl font-semibold mb-3">How You Can Support Us</h3>
         <p className="text-lg">
-          There are many ways you can contribute to turtle conservation in Sri
-          Lanka, from supporting turtle hatcheries to reducing plastic waste and
-          ensuring clean oceans. Every small action counts toward creating a
-          safe environment where these ancient creatures can continue to thrive.
+          You can be part of the SkyLights Cinemas experience by booking tickets in advance, 
+          following cinema etiquette, and supporting local and international films. 
+          Additionally, providing feedback helps us improve and deliver better entertainment for our audience. 
+          Every visit contributes to keeping the magic of cinema alive!
         </p>
       </div>
     </div>
