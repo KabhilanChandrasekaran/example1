@@ -1,4 +1,4 @@
-import hero from "../images/Seeman.jpg";
+import hero from "../images/Home.jpg";
 import { useEffect, useState } from "react";
 import BackgroundRipple from "../components/BackgroundRipple"; // Import BackgroundRipple component
 

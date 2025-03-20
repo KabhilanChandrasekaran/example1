@@ -15,23 +15,24 @@ const MovieLanding = () => {
 
         <BoxReveal width="100%" boxColor="#96DEAE" duration={0.7}>
           <p className="text-4xl mt-4 text-[#5046e6]">
-            Join us in our mission to xxxxxx xxxxxxxxx xxxxxxxxx!
+            Welcome to SkyLight 3D Cinemas seamless booking experience!
           </p>
           <p className="text-2xl mt-4">
-            We organize engaging events where participants can contribute to the
-            conservation of these majestic creatures.
+            Simply browse through the available showtimes and choose the one that fits your schedule. 
+            Our interactive seating chart allows you to select your preferred seats, 
+            giving you full control over your booking. Whether you're attending alone or with a group, 
+            the process is straightforward and intuitive
           </p>
         </BoxReveal>
 
         <BoxReveal width="100%" boxColor="#5046e6" duration={0.7}>
           <p className="text-2xl mt-4">
-            Every event supports our efforts, with all proceeds going directly
-            toward protecting xxxxxxxx xxxxx and their habitats.
+          Once your seats are selected, our system will quickly confirm your booking, providing you with an instant reservation.
             <span className="text-[#5046e6]">
               {" "}
-              Together, we can make a difference
+              Fast, Secure, and Convenient
             </span>
-            xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxx xxxx.
+            
           </p>
           <Link to="/movieViews">
             <button className="bg-[#2E2E2E] text-white px-4 py-2 rounded-md mt-10 text-2xl">
