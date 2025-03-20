@@ -54,7 +54,6 @@ const MovieProgramPage = () => {
     const tableColumn = [
       "No.",
       "Movie Name",
-      "Venue",
       "Screen",
       "Date",
       "Time",
@@ -115,11 +114,12 @@ const MovieProgramPage = () => {
       <div className="flex justify-between items-center mb-4">
         <input
           type="text"
-          placeholder="Search by movie name, movie..."
+          placeholder="Search by movie name"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="border border-gray-500 px-4 py-2 w-full max-w-xs"
         />
+
         {/* New Filter */}
         <div>
           <label className="mr-2">From:</label>
@@ -130,6 +130,7 @@ const MovieProgramPage = () => {
             className="border border-gray-500 px-4 py-2"
           />
         </div>
+
         <div>
           <label className="mr-2">To:</label>
           <input
@@ -139,6 +140,7 @@ const MovieProgramPage = () => {
             className="border border-gray-500 px-4 py-2"
           />
         </div>
+
         <div className="flex gap-4">
           <button
             onClick={downloadPDF}
