@@ -7,9 +7,9 @@ import DarkModeToggle from "../../components/DarkModeToggle";
 import TypingAnimation from "../../components/TypingAnimation";
 import GridPattern from "../../components/GridPatternBG";
 
-import b1 from "../../images/f1.png";
-import b2 from "../../images/f2.png";
-import b3 from "../../images/f3.png";
+import b1 from "../../images/xmen.jpg";
+import b2 from "../../images/bat.jpg";
+import b3 from "../../images/hulk.jpg";
 
 const MovieProgramPage = () => {
   const [moviesPrograms, setMovies] = useState([]);
@@ -119,28 +119,26 @@ const MovieProgramPage = () => {
           <img
             src={images[currentImage]}
             alt={`Slide ${currentImage + 1}`}
-            className="w-full h-80 object-cover rounded-md shadow-md"
+            className="w-full h-90 object-cover rounded-md shadow-md"
           />
         </div>
-        <TypingAnimation
-          text="Welcome To SkyLight 3D Cinemas"
+           <TypingAnimation
+          text="Welcome To SkyLight 3D Cinemas Kaduwela"
           duration={25}
           className={`text-2xl font-bold mb-8 ${
             darkMode ? "text-white" : "text-[#5046e6]"
-          }`}
-        />
-        <div className="flex justify-between items-center mb-8">
-          <h1
-            className={`text-3xl my-8 ${
-              darkMode ? "text-white" : "text-black"
-            }`}
-          >
-            Movie List
-          </h1>
+             }`}
+            />
+        <div className="flex items-center my-8">
           <div className="flex items-center gap-4">
-            <DarkModeToggle />
+           <DarkModeToggle />
           </div>
-        </div>
+          <h1
+          className={`text-3xl font-bold mx-auto ${darkMode ? "text-white" : "text-black"}`}
+          >
+          Now Showing
+        </h1>
+      </div>
         {/* cl3d */}
         <div
           className={`bg-[#beedc1] p-4 rounded-lg shadow-md ${
@@ -150,7 +148,7 @@ const MovieProgramPage = () => {
           <div className="flex justify-between items-center mb-4">
             <input
               type="text"
-              placeholder="Search by movie name, Venue..."
+              placeholder="Search by movie name"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={`border border-gray-500 px-4 py-2 w-full max-w-xs rounded-md ${
